@@ -1,0 +1,16 @@
+<template name="ApplicationLayout">
+<div id="ApplicationLayout">
+    {{#if notification}}
+  <p id="nitclick" style="margin-left:10%;">{{notification.length}}</p>
+
+  <div id="shownotifiation" >
+    {{#each notification}}
+    <p><a href="{{this.link}}" class="nitlinks" id="{{this._id}}">{{this.username}}</a></p>
+    {{/each}}
+  </div>
+  {{/if}}
+{{> yield}}
+</div>
+
+{{>ListOfOnliners}}
+</template>

@@ -1,0 +1,45 @@
+.onofline{
+  width:20px;
+  height:20px;
+  border-radius:50%;
+  background-color:#27ae60;
+}
+.oflined{
+  width:20px;
+  height:20px;
+    background-color:#d35400;
+      border-radius:50%;
+}
+#setonofonline{
+  width:100%;
+  height:50px;
+  margin-bottom:5px;
+}
+#setonofonline > div{
+
+  width:20px;
+  height:20px;
+  border-radius:50%;
+  display:inline-block;
+}
+#onlined{
+  background-color:#27ae60;
+  margin-left:30%;
+}
+
+#setonofonline > div:before {
+  position:relative;
+  top:10px;
+  margin-left:20px;
+  color:#34495e;
+}
+#onlined:before{
+  content:"ONLINE";
+}
+#offlined:before{
+  content:"OFFLINE"
+}
+#offlined{
+    background-color:#d35400;
+    margin-left:30%;
+}

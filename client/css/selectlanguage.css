@@ -1,0 +1,51 @@
+#selectlanguage{
+  width:100%;min-height:860px;
+  background-color:#fbfcfc;
+
+}
+
+.country{
+  width:200px;
+  height:200px;
+  border-radius:50%;
+  display:inline-block;
+  margin:3%;
+}
+.country:before{
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius:50%;
+  background: rgba(20,20,20, 0.5);
+  font-size:2em;
+  color:white;
+  font-weight:bolder;
+  text-align:center;
+  padding-top:40%;
+}
+.country:hover:before { background: none; }
+.flag-icon-gb:before{content:"English"}
+.flag-icon-fr:before{content:"French"}
+.flag-icon-jp:before{content:"Japanese"}
+.flag-icon-kr:before{content:"Korean"}
+.flag-icon-es:before{content:"Spanish"}
+.flag-icon-cn:before{content:"Chinese"}
+.flag-icon-ru:before{content:"Russian"}
+.flag-icon-ng:before{content:"Yoruba"}
+.flag-icon-sa:before{content:"Arabic"}
+.flag-icon-de:before{content:"German"}
+.flag-icon-pt:before{content:"Portugese"}
+.flag-icon-za:before{content:"Afrikaans"}
+
+
+#gobackprofile{
+  position:absolute;
+  top:0;
+  left:90%;
+}
+.call{
+  color:gray;
+}

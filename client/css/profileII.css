@@ -1,0 +1,26 @@
+.glyphicon-send{
+  text-align:center;
+  color:gray;
+  font-size:2em;
+  padding-top:2%;
+  margin-top:25px;
+  margin-left:25px;
+}
+
+#infosection p{
+  text-align:center;
+  color:white;
+  font-size:1.2em;
+  padding:2%;
+  font-weight:lighter;
+  cursor:pointer;
+}
+#infosection > .row p:hover{color:#2ecc71;font-weight:bolder;}
+
+#slider{width:200px;height:30px;margin:auto;background-color:#7f8c8d;margin-top:1px;border-radius:50px;}
+
+#thedate{color:white;text-align:center;padding-top:2%;font-size:2em;}
+
+.sliderballonline{
+  margin-left:160px
+}

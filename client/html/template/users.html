@@ -1,0 +1,16 @@
+<template name="users">
+
+      <div id="users">
+          <a class="btn-floating btn-large white" id="gobackprofile"><i class="material-icons call">call_made</i></a>
+          <div id="setonofonline">
+              <div id="onlined"></div>
+                <div id="offlined"></div>
+          </div>
+          {{#each onlineer}}
+            {{> oneUser}}
+          {{/each}}
+
+      </div>
+
+
+</template>

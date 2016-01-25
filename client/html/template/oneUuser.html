@@ -1,0 +1,21 @@
+<template name="oneUser">
+
+{{#unless notOwner}}
+  <div class="userInfo">
+
+        <div class="usersshort" style="background-image:url({{this.imageUrl}})">
+
+        </div>
+        <div class="{{#if this.status}}onofline{{/if}} {{#unless this.status}}oflined{{/unless}}"></div>
+
+        <div class="userintro">
+        <p class="username">{{this.username}}</p>
+        <p class="userintromessage">
+          {{this.intromessage}}
+        </p>
+
+        </div>
+
+  </div>
+{{/unless}}
+</template>

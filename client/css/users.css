@@ -1,0 +1,40 @@
+#users{
+  width:100%;
+  height:860px;
+  background-color:#ecf0f1;
+  margin:auto;
+}
+
+
+.userInfo{
+  width:300px;
+  height:300px;
+  display:inline-block;
+  margin:2%;
+  cursor:pointer;
+}
+.usersshort{
+  width:100px;
+  height:100px;
+  display:block;
+  border-radius:50%;
+  margin:auto;
+}
+.userintro{
+  width:100%;
+  margin-top:5px;
+  color:#34495e;
+  text-align:center;
+
+}
+
+.username{
+  font-size:1.4em;
+  font-weight:bolder;
+  letter-spacing:3px;
+}
+.userintromessage{
+  font-size:0.9em;
+  font-weight:lighter;
+
+}

@@ -1,0 +1,83 @@
+<template name="profile">
+
+
+        <div id="profile">
+
+
+                  <div id="overhead">
+
+                          <div id="miniprofile" class="row">
+
+                                  <div id="infosection" class="col-md-4">
+                                      <div class="row">
+                                          <div  class=" middleinfo col-md-12" id="findPartner">
+                                            <p>Find Partner</p>
+                                          </div>
+                                          {{#unless myprofile}}
+                                          <div id="profileimage" class="col-md-12">
+                                            <input type="file" name="inputmyprofile" id="inputmyprofile">
+                                            <span class="glyphicon glyphicon-camera"></span>
+                                          </div>
+                                          {{/unless}}
+
+                                          {{#if myprofile}}
+                                          <div id="profileimage" class="col-md-12" style="background-image:url({{myprofile}})">
+                                            <input type="file" name="inputmyprofile" id="inputmyprofile">
+                                              <span class="glyphicon glyphicon-camera" style="font-size:1em;margin:auto;color:white;"></span>
+                                          </div>
+                                          {{/if}}
+
+                                          <div id="userstatus" class="col-md-12">
+                                            <div class="row">
+                                              <p class="col-md-6" id="online">ONLINE</p>
+                                              <p class="col-md-6" id="offline">OFFLINE</p>
+                                            </div>
+
+                                              <div id="slider">
+
+                                                  <a class="btn-floating btn-small white {{#unless online}}sliderballonline{{/unless}}" id="slidingwhiteball"></a>
+                                              </div>
+
+                                          </div>
+                                      </div>
+
+
+                                  </div>
+                                  <div id="activitylog" class="col-md-8">
+
+                                      <div class="row">
+
+                                              <div id="main" class="col-md-12">
+                                                <p id="mainIntroText">Add Intoductory Message</p>
+                                                  <textarea id="introtext">{{intromessage}}</textarea>
+
+                                              </div>
+
+                                              <div  class="col-md-12">
+                                                  <div id="buttons" class="row">
+                                                    <div id="thedate" class="col-md-6">
+                                                        <p>{{date}} </p>
+                                                    </div>
+                                                    <div id="logout" class="col-md-2">
+                                                        <span class="glyphicon glyphicon-send"></span>
+                                                    </div>
+                                                    <div id="rest" class="col-md-4">
+                                                          <h2 style="color:white;">Delete Account</h2>
+                                                    </div>
+                                                  </div>
+
+                                              </div>
+
+                                      </div>
+
+                                  </div>
+
+
+                          </div>
+
+                  </div>
+
+        </div>
+
+
+</template>

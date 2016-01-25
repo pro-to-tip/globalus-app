@@ -1,0 +1,30 @@
+#makeCall,#endCall{
+  color:#34495e;
+  font-size:1em;
+  padding:1%;
+  width:50px;
+  height:50px;
+  text-align:center;
+  display:inline-block;
+  cursor:pointer;
+}
+
+#videoChat{
+  width:100%;
+  height:100%;
+
+}
+
+#theirVideo{
+  width:100%;
+  height:100%;
+
+}
+#myVideo{
+  position:absolute;
+  width:200px;
+  height:200px;
+  z-index:2;
+  top:0;
+  left:78%;
+}

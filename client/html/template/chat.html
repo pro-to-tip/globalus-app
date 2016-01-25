@@ -1,0 +1,42 @@
+<template name="chat">
+
+      <div id="chat">
+
+<div class="row">
+                <div id="writtenchat" class="col-md-4">
+
+                    <div class="row">
+
+                            <div id="chatmessages" class="col-md-12">
+                              {{#each message}}
+                                  {{> messages}}
+                              {{/each}}
+
+                            </div>
+                            <div id="chatinput" class="col-md-12">
+                              <textarea placeholder="Contact User here.." id="textareaSpance"></textarea>
+                              <input type="submit"  class="waves-effect waves-light btn" id="sendmessage" value="Send Message"/>
+                                <a class="btn-floating btn-large waves-effect waves-light" id="gobacktoselectlang">Back</a>
+                                <button class="waves-effect waves-light {{#if connected}}red{{/if}} {{#unless connected}}white{{/unless}}" id="ConnectBothUsers"><small style="color:blue">connect</small></button>
+                                <p>Your id: <span id="myPeerId" class="card"></span></p>
+                                <input type="text" placeholder="Ask for His/Her Id (shown above) place here..." id="remotePeerId">
+                                {{#if connected}}
+                                <p id="makeCall" class="card">Make Call</p>
+                                <p id="endCall" class="card">End Call</p>
+                                {{/if}}
+                            </div>
+                    </div>
+
+
+                </div>
+
+                <div id="talkingchat" class="col-md-8">
+
+                    {{> chatEntity}}
+
+                </div>
+  </div>
+
+      </div>
+
+</template>

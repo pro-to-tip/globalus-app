@@ -1,0 +1,37 @@
+#chat{
+  width:100%;
+  height:800px;
+}
+#chat > .row > div{height:800px;}
+#writtenchat{background-color:#3498db;}
+#talkingchat{background-color:#ecf0f1;}
+
+#chatmessages{height:560px;overflow-y:scroll;}
+#chatinput{height:200px;background-color:white;}
+
+#chatinput > textarea{min-width:105%;max-width:105%;min-height:50px;max-height:80px;background-color:#ecf0f1}
+
+#chatinput > textarea::-moz-placeholder {
+  color:black;
+  text-align:center;
+  font-size:1.4em;
+  padding-top:2%;
+  font-weight:bolder;
+}
+
+
+.messages{
+  width:100%;
+  max-height:200px;
+  margin:1%;
+}
+
+.messageUserInfo{width:100%;max-height:150px;}
+.messageUserInfo > div{display:inline-block;}
+.messageInfo{width:100%;max-height:50px;}
+
+.messageprofilepic{width:50px;height:50px;border-radius:50%;}
+.messageprofilename{width:70%;height:100%;}
+.messageprofilename > p {width:90%; color:#ecf0f1;}
+
+.messageInfo > p{color:#34495e;width:90%;margin-left:10%;}

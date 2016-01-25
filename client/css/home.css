@@ -1,0 +1,36 @@
+#homeBase{
+
+  width:100%;min-height:1000px;
+}
+
+div{
+  font-family: 'Roboto', sans-serif;
+  background-position:center;
+  background-size:cover;
+  background-repeat:no-repeat;
+}
+
+#picturesofContinents{height:100%;}
+#picturesofContinents > div{
+  min-height:500px;
+  border:10px solid white;
+}
+
+#picturesofContinents > div:before{
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: all .3s linear;
+}
+#picturesofContinents > div:hover:before { background: none; }
+#europe:before { background: rgba(0,0,255, 0.5); }
+#asia:before { background: rgba(255,0,0, 0.5); }
+#america:before { background: rgba(0,255,0, 0.5); }
+#africa:before { background: rgba(255,0,240, 0.5); }
+#middleeast:before { background: rgba(255,102,0, 0.6); }
+#antartica:before{background:rgba(44, 62, 80,0.5)}
+#australia:before{background:rgba(189, 195, 199,0.5)}

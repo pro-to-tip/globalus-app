@@ -1,0 +1,18 @@
+<template name="welcome">
+
+        <div id="welcomeform" >
+
+            <form>
+              {{#if error}}
+              <div class="alert alert-success errorplace" role="alert"></div>
+              {{/if}}
+            <input type="text" class="formme" placeholder="Username" name="username">
+            <input type="password" class="formme" placeholder="Password (*8)" name="password">
+            <button id="signin"> Sign In </button>
+            <p id="signup"> Sign Up</p>
+            <!--<p id="forgotpassword">Forgot Password ? </p>-->
+          </form>
+        </div>
+
+
+</template>

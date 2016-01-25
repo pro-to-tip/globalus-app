@@ -1,0 +1,14 @@
+<template name="ListOfOnliners">
+
+      <div id="clickers"></div>
+        <div id="ListOfOnliners" class="card">
+
+
+            {{#each people}}
+            <p class="langCount">{{this.name}}: <span class="person">{{this.usersonline.length}}</span></p>
+            {{/each}}
+
+        </div>
+
+
+</template>

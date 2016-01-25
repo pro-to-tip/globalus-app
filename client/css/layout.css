@@ -1,0 +1,44 @@
+header{
+  height:100px;
+  background-color:white;
+  width:10%;
+  position:absolute;
+}
+
+#ApplicationLayout{
+  width:100%;
+  min-height:800px;
+}
+
+#ApplicationLayout > p{
+  width:50px;
+  height:50px;
+  position:absolute;
+  z-index:2;
+  border-radius:50%;
+  background-color:#34495e;
+  left:2%;
+  top:2%;
+  text-align:center;
+  color:#bdc3c7;
+  padding-top:1%;
+  font-weight:normal;
+  font-size:1em;
+}
+#shownotifiation{
+  max-width:200px;
+  min-width:120px;
+  min-height:50px;
+  position:absolute;
+  top:85.5%;
+  left:85%;
+  background-color:#34495e;
+  color:#bdc3c7;
+  z-index:3;
+}
+
+#shownotifiation a {color:white;text-decoration:none;padding-top:5%;width:70%;height:20px;margin-left:5%;text-align:center;}
+#shownotifiation > p{
+  padding-top:3%;
+  margin-top:10px;
+}
